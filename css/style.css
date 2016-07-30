@@ -435,13 +435,13 @@ iframe {
 	color: #888;
 }
 .form-control:-moz-placeholder {
-	color: #888;  
+	color: #888;
 }
 .form-control::-moz-placeholder {
-	color: #888;  
+	color: #888;
 }
 .form-control:-ms-input-placeholder {
-	color: #888;  
+	color: #888;
 }
 .form-control:focus {
 	-webkit-box-shadow: none;
@@ -901,7 +901,7 @@ iframe {
 	position: relative;
 	z-index: 1;
 	vertical-align: middle;
-	display: inline-block;	
+	display: inline-block;
 }
 .hero-section form {
 	background-color: #f6f6f6;
@@ -1271,7 +1271,7 @@ iframe {
 .section-dark .hiw-item-icon {
 	border-color: #222;
 }
-.section-dark .hiw-item.even .hiw-item-icon {	
+.section-dark .hiw-item.even .hiw-item-icon {
 	border-color: #292929;
 }
 .section-accent .hiw-item-icon {
@@ -1644,14 +1644,14 @@ iframe {
 	padding-top: 37.5%;
 	position: relative;
 }
-.maps-image #gmap {
+.maps-image .gmap {
 	position: absolute !important;
 	width: 100%;
 	height: 100%;
 	top: 0;
 	left: 0;
 }
-.maps-image #gmap img {
+.maps-image .gmap img {
 	max-width: none;
 }
 .maps-text-inner {

@@ -421,24 +421,20 @@
 
 					<!-- MAPS IMAGE -->
 					<div class="maps-image" data-animation="fadeIn">
-						<div id="gmap"></div>
+						<div id="gmap-benavente" class="gmap"></div>
 
 						<script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
 						<!-- GOGGLE MAPS CONFIGURATION -->
 						<!-- ref: http://maplacejs.com/ -->
 						<script>
-						var gmap_options = {
+						var gmap_options_benavente = {
+							map_div: '#gmap-benavente',
 							generate_controls : false,
 							locations : [{
-								lat : -8.72093,
-								lon : 115.16964,
+								lat : 42.0030268,
+								lon : -5.6661305,
 								animation : google.maps.Animation.DROP,
-								html : "Drew Headquarter",
-							}, {
-								lat : -8.71595,
-								lon : 115.17398,
-								animation : google.maps.Animation.DROP,
-								html : "Workshop & Store",
+								html : "Muebles Bernardo",
 							}],
 							map_options : {
 								scrollwheel : false,
@@ -458,12 +454,12 @@
 
 						<div class="maps-text-inner">
 
-							<h2 class="section-heading text-left">Muebeles Bernardo en Benavente</h2>
+							<h2 class="section-heading text-left">Muebles Bernardo en Benavente</h2>
 
 							<div class="row">
 								<address class="col-xs-12">
 									<ul class="fa-ul">
-										<li><i class="fa-li fa fa-home"></i>Carretera León - Astorga Km 4'5, 24010<br>Trabajo del Camino, León</li>
+										<li><i class="fa-li fa fa-home"></i>Avenida del Calvario 63, 49600<br>Benanvente, Zamora</li>
 										<li><i class="fa-li fa fa-phone"></i>Teléfono: +34 980 636 388</li>
 									</ul>
 								</address>
@@ -482,12 +478,12 @@
 
 						<div class="maps-text-inner">
 
-							<h2 class="section-heading text-left">Muebeles Bernardo en León</h2>
+							<h2 class="section-heading text-left">Muebles Bernardo en León</h2>
 
 							<div class="row">
 								<address class="col-xs-12">
 									<ul class="fa-ul">
-										<li><i class="fa-li fa fa-home"></i>Avenida del Calvario 63, 49600<br>Benanvente, Zamora</li>
+										<li><i class="fa-li fa fa-home"></i>Carretera León - Astorga Km. 4'5, 24010<br>Trabajo del Camino, León</li>
 										<li><i class="fa-li fa fa-phone"></i>Teléfono: +34 987 803 970</li>
 									</ul>
 								</address>
@@ -499,24 +495,19 @@
 
 					<!-- MAPS IMAGE -->
 					<div class="maps-image" data-animation="fadeIn">
-						<div id="gmap"></div>
+						<div id="gmap-leon" class="gmap"></div>
 
-						<script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
 						<!-- GOGGLE MAPS CONFIGURATION -->
 						<!-- ref: http://maplacejs.com/ -->
 						<script>
-						var gmap_options = {
+						var gmap_options_leon = {
+							map_div: '#gmap-leon',
 							generate_controls : false,
 							locations : [{
-								lat : -8.72093,
-								lon : 115.16964,
+								lat : 42.5874477,
+								lon : -5.6249336,
 								animation : google.maps.Animation.DROP,
-								html : "Drew Headquarter",
-							}, {
-								lat : -8.71595,
-								lon : 115.17398,
-								animation : google.maps.Animation.DROP,
-								html : "Workshop & Store",
+								html : "Muebles Bernardo",
 							}],
 							map_options : {
 								scrollwheel : false,

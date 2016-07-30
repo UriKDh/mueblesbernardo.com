@@ -226,8 +226,11 @@
 		 * Google Maps
 		 * =======================================
 		 */
-		if ( typeof Maplace == 'function' && $( '#gmap' ) ) {
-			new Maplace( gmap_options ).Load();
+		 if ( typeof Maplace == 'function' && $( '#gmap-benavente' ) ) {
+ 			new Maplace( gmap_options_benavente ).Load();
+ 		};
+		if ( typeof Maplace == 'function' && $( '#gmap-leon' ) ) {
+			new Maplace( gmap_options_leon ).Load();
 		};
 
 		/**
@@ -282,12 +285,12 @@
 
 							// custom callback
 							$el.trigger( 'form-ajax-response', response );
-							
+
 							// error
 							if ( response.status == 'error' ) {
 								$alert.html( response.message );
 								$alert.addClass( 'alert-danger' ).fadeIn( 500 );
-							} 
+							}
 							// success
 							else if ( response.status == 'error' ) {
 								$el.trigger( 'reset' );
