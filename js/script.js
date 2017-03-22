@@ -333,6 +333,26 @@
 		$window.trigger( 'resize' );
 		$window.trigger( 'scroll' );
 
+
+		/* =======================================
+		 * Slick
+		 * =======================================
+		 */
+	  $('.hiw-item-picture').slick({
+			adaptiveHeight: true
+	  });
+		$('.hiw-item-picture').on('afterChange', function(e, slick, currentSlide) {
+			var type = $(this).find('img:eq(' + (currentSlide + 1) +')').data('type');
+			$(e.target).closest('.hiw-item').find('.hiw-item-text li').removeClass('active')
+				.filter('[data-type=' + type + ']').addClass('active');
+		});
+		$('.hiw-item-text li').on('click', function(){
+			var $this = $(this), type = $this.data('type'),
+				$slick = $this.closest('.hiw-item').find('.hiw-item-picture');
+
+			$slick.slick('slickGoTo', $slick.find('img[data-type=' + type + ']').index() - 1);
+		});
+
 	});
 
 })( jQuery );

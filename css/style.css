@@ -1248,6 +1248,9 @@ iframe {
 	padding: 50px 40px;
 	text-align: center;
 }
+.hiw-item-text .active{
+	font-weight: bold;
+}
 .hiw-item-icon {
 	position: absolute;
 	top: 0;
